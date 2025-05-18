@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+ <!--Cabeça da página-->
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+
+    <!--Definição de estilos da página CSS-->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #111; /* fundo preto */
+            color: #e6ffe6;   /* texto levemente esverdeado */
+        }
+
+        .menu {
+            display: flex;
+            background: #000; /* fundo preto */
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #1aff6c; /* detalhe verde */
+            box-shadow: 0 4px 16px rgba(26,255,108,0.10);
+        }
+
+        .menu a {
+            flex: 1;
+            text-align: center;
+            padding: 18px 0;
+            text-decoration: none;
+            color: #baffc9; /* verde claro */
+            background: transparent;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            position: relative;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .menu a:focus,
+        .menu a:hover {
+            color: #1aff6c;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 12px rgba(26,255,108,0.12);
+            z-index: 1;
+        }
+
+        .menu a.ativa {
+            background: rgba(26,255,108,0.18);
+            color: #fff;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 16px rgba(26,255,108,0.18);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+
+
+
+<!--Corpo da página -->
+<body>
+    <!--Menu da página-->
+    <header class="menu">
+        <a href="sobre.html">Sobre mim</a>
+        <a href="formação.html">Formação</a>
+        <a href="Portifólio.html">Portifólio</a>
+        <a href="contato.html" class="ativa">Contato</a>
+    </header>
+    <section style="max-width: 400px; margin: 40px auto; background: #181818; border-radius: 12px; box-shadow: 0 2px 16px rgba(26,255,108,0.10); padding: 32px 24px;">
+        <h2 style="color: #1aff6c; margin-top: 0; margin-bottom: 18px; font-size: 1.7em; letter-spacing: 1px;">Contato</h2>
+        <p style="font-size: 1.1em; color: #e6ffe6; margin-bottom: 8px;">Email:</p>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpDxzHkGtkdhCmHcchDVTgDmNRBsjFsnzSJXDBHXFhHxtBDzbvqGdpDmNGwSzpNjGhfKTj" target="_blank" rel="noopener" style="color: #baffc9; text-decoration: underline; font-size: 1.1em;">wesleibreno007@gmail.com</a>
+    </section>
+
+</body>
+</html>

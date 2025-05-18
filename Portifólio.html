@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+ <!--Cabeça da página-->
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+
+    <!--Definição de estilos da página CSS-->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #111; /* fundo preto */
+            color: #e6ffe6;   /* texto levemente esverdeado */
+        }
+
+        .menu {
+            display: flex;
+            background: #000; /* fundo preto */
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #1aff6c; /* detalhe verde */
+            box-shadow: 0 4px 16px rgba(26,255,108,0.10);
+        }
+
+        .menu a {
+            flex: 1;
+            text-align: center;
+            padding: 18px 0;
+            text-decoration: none;
+            color: #baffc9; /* verde claro */
+            background: transparent;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            position: relative;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .menu a:focus,
+        .menu a:hover {
+            color: #1aff6c;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 12px rgba(26,255,108,0.12);
+            z-index: 1;
+        }
+
+        .menu a.ativa {
+            background: rgba(26,255,108,0.18);
+            color: #fff;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 16px rgba(26,255,108,0.18);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+
+
+
+<!--Corpo da página -->
+<body>
+    <!--Menu da página-->
+    <header class="menu">
+        <a href="sobre.html">Sobre mim</a>
+        <a href="formação.html">Formação</a>
+        <a href="Portifólio.html" class="ativa">Portifólio</a>
+        <a href="contato.html">Contato</a>
+    </header>
+
+<section style="max-width: 600px; margin: 40px auto; background: #181818; border-radius: 12px; box-shadow: 0 2px 12px rgba(26,255,108,0.08); padding: 32px;">
+    <h2 style="color: #1aff6c; margin-top: 0;">Projetos para Download</h2>
+    <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 18px;">
+            <a href="https://drive.google.com/file/d/1hIIT0-X5rmjGBX9OcSVYF9vH9t2pvATj/view?usp=sharing" download style="color: #baffc9; text-decoration: underline;" target="_blank" rel="noopener">Java - Cofre (lá ele)</a>
+        </li>
+        <li>
+            <a href="https://docs.google.com/spreadsheets/d/1F_U2mS_-f5wZueZsJwU_h712y3KglQOl/edit?usp=sharing&ouid=115598178713079873583&rtpof=true&sd=true" download style="color: #baffc9; text-decoration: underline;" target="_blank" rel="noopener">IA perceptron simples</a>
+        </li>
+        <!-- Adicione mais projetos conforme necessário -->
+    </ul>
+    <p style="color: #e6ffe6; font-size: 0.95em;">Clique no nome do projeto para baixar o arquivo.</p>
+</section>
+<div style="text-align: center; margin-top: 32px;">
+    <img src="Imagens/dedsec.gif" alt="referencia" style="max-width: 100%; border: none; border-radius: 0; box-shadow: none;">
+</div>
+</body>
+</html>

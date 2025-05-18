@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+ <!--Cabeça da página-->
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+
+    <!--Definição de estilos da página CSS-->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #111; /* fundo preto */
+            color: #e6ffe6;   /* texto levemente esverdeado */
+        }
+
+        .menu {
+            display: flex;
+            background: #000; /* fundo preto */
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #1aff6c; /* detalhe verde */
+            box-shadow: 0 4px 16px rgba(26,255,108,0.10);
+        }
+
+        .menu a {
+            flex: 1;
+            text-align: center;
+            padding: 18px 0;
+            text-decoration: none;
+            color: #baffc9; /* verde claro */
+            background: transparent;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            position: relative;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .menu a:focus,
+        .menu a:hover {
+            color: #1aff6c;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 12px rgba(26,255,108,0.12);
+            z-index: 1;
+        }
+
+        .menu a.ativa {
+            background: rgba(26,255,108,0.18);
+            color: #fff;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 16px rgba(26,255,108,0.18);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+
+
+
+<!--Corpo da página -->
+<body>
+    <!--Menu da página-->
+    <header class="menu">
+        <a href="index.html" class="ativa">Sobre mim</a>
+        <a href="Formação.html">Formação</a>
+        <a href="Portifólio.html">Portifólio</a>
+        <a href="contato.html">Contato</a>
+    </header>
+    <main style="display: flex; align-items: flex-start; gap: 32px; padding: 40px 5vw;">
+        <section style="flex: 1;">
+            <h1>Olá, eu me chamo W. Breno </h1> <!--titulo-->
+            <ul>
+                <li>Nascido em 2002</li>
+                <li>Bahia</li>
+                <li>Trabalho como "recepcionista"</li>
+            </ul>
+            <h2>Principais Interesses</h2>
+            <ul>
+                <li>Tecnologia e programação</li>
+                <li>Inteligência artificial</li>
+                <li>Excel</li>
+                <li>Aprendizado</li>
+                <li>Python de cada dia</li>
+            </ul>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Ouvir música</li>
+                <li>Jogar videogame</li>
+                <li>Ler livros</li>
+                <li>Assistir séries</li>
+                <li>Escrever</li>
+            </ul>
+            <!-- conteudo adicionado -->
+        </section>
+        <aside style="flex-shrink: 0;">
+            <img src="Imagens/B1.jpg" alt="Foto de perfil" style="
+                width: min(300px, 30vw);
+                height: auto;
+                border: 4px solid #1aff6c;
+                border-radius: 16px;
+                box-shadow: 0 4px 24px rgba(26,255,108,0.10);
+                display: block;
+                max-width: 100%;
+            ">
+            
+        </aside>
+    </main>
+
+</body>
+
+
+<!--encerramento-->
+</html>

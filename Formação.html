@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+ <!--Cabeça da página-->
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+
+    <!--Definição de estilos da página CSS-->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #111; /* fundo preto */
+            color: #e6ffe6;   /* texto levemente esverdeado */
+        }
+
+        .menu {
+            display: flex;
+            background: #000; /* fundo preto */
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #1aff6c; /* detalhe verde */
+            box-shadow: 0 4px 16px rgba(26,255,108,0.10);
+        }
+
+        .menu a {
+            flex: 1;
+            text-align: center;
+            padding: 18px 0;
+            text-decoration: none;
+            color: #baffc9; /* verde claro */
+            background: transparent;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            position: relative;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .menu a:focus,
+        .menu a:hover {
+            color: #1aff6c;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 12px rgba(26,255,108,0.12);
+            z-index: 1;
+        }
+
+        .menu a.ativa {
+            background: rgba(26,255,108,0.18);
+            color: #fff;
+            box-shadow: 0 4px 0 #1aff6c inset, 0 2px 16px rgba(26,255,108,0.18);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+
+
+
+<!--Corpo da página -->
+<body>
+    <!--Menu da página-->
+    <header class="menu">
+        <a href="sobre.html">Sobre mim</a>
+        <a href="formação.html" class="ativa">Formação</a>
+        <a href="portifólio.html">Portifólio</a>
+        <a href="contato.html">Contato</a>
+    </header>
+    <main style="max-width: 700px; margin: 40px auto; padding: 24px; background: rgba(0,0,0,0.6); border-radius: 12px; box-shadow: 0 2px 16px rgba(26,255,108,0.08);">
+        <h1>Formação</h1>
+        <p>
+            Atualmente, estou cursando Tecnologia em Ciência de Dados, buscando aprofundar meus conhecimentos em análise, processamento e interpretação de dados para soluções inovadoras. Concluí o ensino médio no CEEP, onde tive a oportunidade de desenvolver uma base de técnico em ADM em minha trajetória acadêmica e profissional.<br>
+            Por questões de privacidade, não serão divulgados outros dados pessoais neste site.
+        </p>
+        <p>
+            Por enquanto falo apenas um indioma e minha melhor noção de aplicação prática se trata de usos de planilhas com formulas em excel. Mais um motivo para procurar aprimorar minhas habilidades 
+
+
+        </p>
+    </main>
+</body>
+</html>
